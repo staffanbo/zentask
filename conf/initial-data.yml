@@ -7,29 +7,29 @@ users:
         email:      guillaume@sample.com
         name:       Guillaume Bort
         password:   secret
-    
+
     - !!models.User
         email:      maxime@sample.com
         name:       Maxime Dantec
         password:   secret
-    
+
     - !!models.User
         email:      sadek@sample.com
         name:       Sadek Drobi
         password:   secret
-    
+
     - !!models.User
         email:      erwan@sample.com
         name:       Erwan Loisant
         password:   secret
-    
+
 # Projects
 
 projects:
 
     - !!models.Project
         id:         1
-        name:       Play 2.0   
+        name:       Play 2.0
         folder:     Play framework
         members:
             - !!models.User
@@ -50,10 +50,10 @@ projects:
                 email: guillaume@sample.com
             - !!models.User
                 email: erwan@sample.com
-                
+
     - !!models.Project
         id:         3
-        name:       Website 
+        name:       Website
         folder:     Play framework
         members:
             - !!models.User
@@ -63,7 +63,7 @@ projects:
 
     - !!models.Project
         id:         4
-        name:       Secret project 
+        name:       Secret project
         folder:     Zenexity
         members:
             - !!models.User
@@ -74,7 +74,7 @@ projects:
                 email: sadek@sample.com
             - !!models.User
                 email: erwan@sample.com
-                
+
     - !!models.Project
         id:         5
         name:       Playmate
@@ -82,7 +82,7 @@ projects:
         members:
             - !!models.User
                 email: maxime@sample.com
-            
+
     - !!models.Project
         id:         6
         name:       Things to do
@@ -100,7 +100,7 @@ projects:
                 email: guillaume@sample.com
             - !!models.User
                 email: maxime@sample.com
-                
+
     - !!models.Project
         id:         8
         name:       Private
@@ -116,7 +116,7 @@ projects:
         members:
             - !!models.User
                 email: erwan@sample.com
-                
+
     - !!models.Project
         id:         10
         name:       Private
@@ -124,7 +124,7 @@ projects:
         members:
             - !!models.User
                 email: sadek@sample.com
-                
+
     - !!models.Project
         id:         11
         name:       Private
@@ -132,11 +132,11 @@ projects:
         members:
             - !!models.User
                 email: maxime@sample.com
-                
+
 # Task
 
 tasks:
-    
+
     - !!models.Task
         title:      Fix the documentation
         done:       false
@@ -145,7 +145,7 @@ tasks:
                         id: 1
         assignedTo: !!models.User
                         email: guillaume@sample.com
-                        
+
     - !!models.Task
         title:      Prepare the beta release
         done:       false
@@ -172,7 +172,7 @@ tasks:
                         id: 2
         assignedTo: !!models.User
                         email: guillaume@sample.com
-                        
+
     - !!models.Task
         title:      Finish zentask integration
         done:       true
@@ -182,7 +182,7 @@ tasks:
                         id: 7
         assignedTo: !!models.User
                         email: maxime@sample.com
-                        
+
     - !!models.Task
         title:      Release the secret project
         done:       false
@@ -192,4 +192,3 @@ tasks:
                         id: 4
         assignedTo: !!models.User
                         email: sadek@sample.com
-            
